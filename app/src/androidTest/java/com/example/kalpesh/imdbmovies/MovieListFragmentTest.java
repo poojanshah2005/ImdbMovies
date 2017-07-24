@@ -35,4 +35,6 @@ public class MovieListFragmentTest {
         onView(withId(R.id.container))
                 .check(matches(isDisplayed()));
     }
+
+
 }

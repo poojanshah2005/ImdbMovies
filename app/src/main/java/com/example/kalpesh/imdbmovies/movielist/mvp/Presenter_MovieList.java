@@ -34,8 +34,8 @@ public class Presenter_MovieList extends BasePresenter<IMovieListView>implements
     public void performListSearch() {
 checkViewAttached();
         movieList_interactor.getMoviesSearch(Constants.API_KEY)
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribeOn(Schedulers.newThread())
+//                .observeOn(AndroidSchedulers.mainThread())
+//                .subscribeOn(Schedulers.newThread())
                 .subscribe(this:: onSuccess, this:: onError);
 
     }

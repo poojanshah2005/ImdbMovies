@@ -11,6 +11,22 @@ import java.util.List;
 
 public class Result {
 
+    public Result(Integer id, Boolean video, Double voteAverage, String title, Double popularity, String posterPath, String originalLanguage, String originalTitle, List<Integer> genreIds, String backdropPath, Boolean adult, String overview, String releaseDate) {
+        this.id = id;
+        this.video = video;
+        this.voteAverage = voteAverage;
+        this.title = title;
+        this.popularity = popularity;
+        this.posterPath = posterPath;
+        this.originalLanguage = originalLanguage;
+        this.originalTitle = originalTitle;
+        this.genreIds = genreIds;
+        this.backdropPath = backdropPath;
+        this.adult = adult;
+        this.overview = overview;
+        this.releaseDate = releaseDate;
+    }
+
     @SerializedName("vote_count")
     @Expose
     private Integer voteCount;
